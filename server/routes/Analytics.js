@@ -18,10 +18,10 @@ router.get('/dashboard-stats', getDashboardStats);
 router.get('/usage-analytics', getUsageAnalytics);
 
 // Protected routes (require authentication)
-router.get('/station-performance', authMiddleware, getStationPerformance);
-router.get('/peak-usage', authMiddleware, getPeakUsageAnalysis);
-router.get('/revenue-trends', authMiddleware, getRevenueTrends);
-router.get('/maintenance-overview', authMiddleware, getMaintenanceOverview);
-router.get('/profits-analysis', authMiddleware, getProfitsAnalysis);
+router.get('/station-performance',   getStationPerformance);
+router.get('/peak-usage',   getPeakUsageAnalysis);
+router.get('/revenue-trends',   getRevenueTrends);
+router.get('/maintenance-overview',  getMaintenanceOverview);
+router.get('/profits-analysis',  getProfitsAnalysis);
 
 export default router;

@@ -1,4 +1,6 @@
+
 import express from 'express';
+import cors from 'cors';
 import './config/db.js'; 
 import stationRoutes  from "./routes/stationRoutes.js"
 import auth from './routes/auth.js'
@@ -10,6 +12,7 @@ import feedbackRoutes from './routes/Feedback.js';
 import analyticsRoutes from './routes/Analytics.js'
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(cors());
 app.use(express.json());
 app.get('/',(req,res)=>{
     res.send('HELLO WORLD');
