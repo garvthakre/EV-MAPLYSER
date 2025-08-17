@@ -1,0 +1,84 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+log.txt
+debug.log
+error.log
+
+# Build outputs
+dist/
+build/
+public/build/
+.tmp/
+.cache/
+.next/
+out/
+
+# React Native (if mobile version is included)
+android/
+ios/
+*.keystore
+
+# Optional npm cache directory
+.npm/
+
+# VS Code
+.vscode/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# MongoDB dump
+dump/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Others
+*.tgz
+*.swp
+
+# Binaries
+*.exe
+*.out
+*.app
+*.dll
+*.so
+
+# Local database or runtime data
+*.sqlite
+*.db
+*.pid
+
+# IDE files
+.idea/
+*.iml
+
+# TypeScript
+*.tsbuildinfo
+
+# Linting
+.eslintcache
+
+# Parcel cache
+.parcel-cache/
+
+# Firebase cache
+.firebase/
+
+# Husky
+.husky/_/
