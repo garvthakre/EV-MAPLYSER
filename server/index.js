@@ -7,7 +7,7 @@ import maintenanceLogs from './routes/MaintenanceLogs.js'
 import usageLogsRoutes from './routes/UsageLogs.js';
 import profitsRoutes from './routes/Profits.js';
 import feedbackRoutes from './routes/Feedback.js';
-
+import analyticsRoutes from './routes/Analytics.js'
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
@@ -22,6 +22,7 @@ app.use('/api/maintenance-logs', maintenanceLogs);
 app.use('/api/usage-logs', usageLogsRoutes);
 app.use('/api/profits', profitsRoutes);
 app.use('/api/feedback', feedbackRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
