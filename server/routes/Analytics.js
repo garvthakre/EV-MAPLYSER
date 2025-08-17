@@ -9,7 +9,7 @@ import {
   getMaintenanceOverview,
   getProfitsAnalysis
 } from '../controllers/Analytics.js';
-import authMiddleware from '../middleware/authMiddleware.js';
+import authMiddleware from '../middleware/authmiddleware.js';
 
 const router = express.Router();
 
