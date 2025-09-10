@@ -18,6 +18,7 @@ import {
   Award,
   ArrowRight
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const EVChargingLanding = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,7 +26,7 @@ const EVChargingLanding = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+  const navigate = useNavigate();
   const features = [
     {
       icon: <MapPin className="w-8 h-8" />,
@@ -134,7 +135,7 @@ const EVChargingLanding = () => {
                 profit optimization, and comprehensive maintenance insights.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+                <button onClick={()=>navigate("/Dashboard1")}className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
                   <Play className="w-5 h-5" />
                   <span>Start Analysis</span>
                 </button>
